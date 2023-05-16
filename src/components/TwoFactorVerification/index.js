@@ -1,11 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Input, Modal } from "antd";
 import "./style.css";
+import { selectSignInRequire2FA, selectUserLoggedIn } from "../../modules";
+import { useSelector, useDispatch } from "react-redux";
 export const TwoFactorVerification = ({ numInputs = 6, onComplete }) => {
   const [otp, setOtp] = useState(new Array(numInputs).fill(""));
   const inputsRef = useRef([]);
-  const [isModalVisible, setIsModalVisible] = useState(true);
-
+  //const [isModalVisible, setIsModalVisible] = useState(true);
+  const isModalVisible = useSelector(selectSignInRequire2FA);
+  const selectUser = useSelector(selectUserLoggedIn);
+  
+  console.log(selectUser);
   const handleChange = (index, event) => {
     const value = event.target.value;
     if (!/^\d*$/.test(value)) {
@@ -48,7 +53,7 @@ export const TwoFactorVerification = ({ numInputs = 6, onComplete }) => {
       }
     } else if (event.key === "Enter" && index === numInputs - 1) {
       // If Enter is pressed in the last input box, show modal
-      setIsModalVisible(true);
+      //setIsModalVisible(true);
       onComplete(otp.join(""));
     }
   };
@@ -65,11 +70,11 @@ export const TwoFactorVerification = ({ numInputs = 6, onComplete }) => {
   };
 
   const handleOk = () => {
-    setIsModalVisible(false);
+    //setIsModalVisible(false);
   };
 
   const handleCancel = () => {
-    setIsModalVisible(false);
+    //setIsModalVisible(false);
     setOtp(new Array(numInputs).fill(""));
     inputsRef.current[0].focus();
   };

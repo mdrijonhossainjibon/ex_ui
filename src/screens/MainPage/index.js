@@ -1,5 +1,7 @@
 import { Router } from "../../Router";
 import { Components } from "../../components";
+import {} from "../../modules";
+import { useDispatch, useSelector } from "react-redux";
 export const MainPage = () => {
   const handleComplete = (otp) => {
     alert(`OTP entered: ${otp}`);
