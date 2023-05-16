@@ -1,0 +1,3 @@
+export const SET_KLINE_DATA = "SET_KLINE_DATA";
+export const UPDATE_KLINE_DATA = "UPDATE_KLINE_DATA";
+export const API_CALL_KLINE_DATA = "API_CALL_KLINE_DATA"; 

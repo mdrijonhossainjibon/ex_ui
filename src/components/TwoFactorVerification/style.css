@@ -1,0 +1,8 @@
+body > div:nth-child(5) > div > div.ant-modal-wrap > div {
+  display: flex;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  align-items: center;
+  justify-content: space-between;
+}
