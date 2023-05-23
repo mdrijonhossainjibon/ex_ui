@@ -1,0 +1,29 @@
+.header-mobile {
+  position: fixed;
+  background: wheat;
+  display: table;
+
+  height: 50px;
+  color: black;
+}
+.header-logo-mobile {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1.99rem;
+  cursor: pointer;
+  padding-left: 15px;
+}
+.header-user-mobile {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1.99rem;
+  cursor: pointer;
+  padding-left: 265px;
+}
+.header-user-login-op-mobile {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1.99rem;
+  cursor: pointer;
+  padding-left: 265px;
+}

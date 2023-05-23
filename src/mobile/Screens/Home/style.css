@@ -1,0 +1,136 @@
+.ant-mobile-home {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+}
+.slider-container {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.notice-bar {
+  background-color: #80454567;
+  color: #333;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  top: 3px;
+}
+
+.notice-content {
+  position: absolute;
+  left: 45px;
+  animation: noticeAnimation 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes noticeAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.notice-content i {
+  margin-right: 10px;
+}
+
+.notice-text span {
+  display: block;
+}
+.all-menu {
+  position: absolute;
+  left: 93%;
+  top: 35%;
+}
+.mobile-table-top {
+  display: flex;
+  align-items: center;
+}
+.mobile-table-top-pair {
+  display: flex;
+  flex-direction: column;
+  margin-left: 9px;
+}
+.font-ax {
+  font-size: 15px;
+}
+.mobile-table-top-change {
+  position: absolute;
+  left: 80%;
+  text-align: center;
+  border-radius: 3px;
+  color: #cfc7b9;
+  width: 69px;
+  font-size: 14px;
+}
+.last-price-mobile {
+  position: absolute;
+  left: 180px;
+  color: #a3a38c;
+}
+.market-change--negative {
+  background: red;
+}
+.market-change--positive {
+  background: #eeee63;
+}
+.mobile-table-top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clre_core_load {
+  position: absolute;
+  width: 350px;
+  height: 46px;
+}
+#root
+  > div.ant-mobile-home
+  > div.adm-pull-to-refresh
+  > div.adm-pull-to-refresh-content
+  > div
+  > div
+  > div.adm-jumbo-tabs-content
+  > div
+  > div
+  > div
+  > div.clre_core_load
+  > div
+  > div
+  > div.ant-skeleton-header
+  > span {
+  margin-top: 10px;
+  margin-left: 8px;
+  height: 25px;
+  width: 25px;
+}
+.mobile-table-top-pair-sk {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.mobile-pair-sk {
+  position: absolute;
+  top: -7px;
+  left: 43px;
+  height: 2px;
+}
+.mobile-lastp-sk {
+  position: absolute;
+  top: 10px;
+  left: 42px;
+  height: 2px;
+}
+.mobile-table-top-pair-lasts {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 143px;
+}
+.top {
+  margin-top: 5px;
+}

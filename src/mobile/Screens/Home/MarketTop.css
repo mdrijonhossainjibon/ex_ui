@@ -1,0 +1,50 @@
+.table-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #999;
+  font-size: 16;
+}
+.table-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  border-bottom: 1px solid;
+  border-color: #eee !important;
+  justify-content: space-around;
+}
+.pair-mobile {
+  color: #999;
+}
+.coincode {
+  display: flex;
+  align-items: center;
+}
+.coincode-title {
+  font-weight: 500;
+  border-radius: 0.08rem;
+  width: 1.8rem;
+  float: right;
+  height: 0.66rem;
+  line-height: 0.66rem;
+  text-align: center;
+  background: #00c087;
+  color: white;
+  width: 77px;
+  height: 26px;
+  text-align: center;
+  border-radius: 3px;
+}
+.coincode-title p {
+  margin-top: 8px;
+}
+.red-color {
+  background: red;
+}
+.yellow-color {
+  background: #00c087;
+}

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Toast } from "antd-mobile";
+//import MarketTable from '../../components/Table'
 import { useDispatch, useSelector } from "react-redux";
 //import { Components } from "../../components";
 //import { Containers } from "../../containers";
@@ -68,6 +69,7 @@ export const Webpagemain = () => {
           </Button>
         </div>
         Components.WEBSlider
+   
         <div className="banner-not">
           <div className="news">
             <SoundOutlined />
